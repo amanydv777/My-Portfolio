@@ -31,5 +31,144 @@
         </nav>        
     </header>
 
+
+<!-- Skills Section -->
+<section id="tool-palette" class="tool-palette-section">  
+  <h2>My <span>Skills</span></h2>
+  <div class="tool-palette">
+  <!-- Each Skills Card -->
+  <div class="tool-item">
+    <img src="images/html.svg" alt="HTML">
+    <p>HTML</p>
+  </div>
+
+  <div class="tool-item">
+      <img src="images/css.svg" alt="CSS">
+      <p>CSS</p>
+  </div>
+
+  <div class="tool-item">
+      <img src="images/javascript.svg" alt="JavaScript">
+      <p>JavaScript</p>
+  </div>
+
+  <div class="tool-item">
+      <img src="images\c.svg" alt="C">
+      <p>C</p>
+  </div>
+
+  <div class="tool-item">
+      <img src="images/cpp.svg" alt="C++">
+      <p>C++</p>
+  </div>
+
+  <div class="tool-item">
+      <img src="images\python.svg" alt="Python">
+      <p>Python</p>
+  </div>
+</div>
+  
+<!-- Technical Tools Section -->
+  
+  <h2>Tech <span>Tools</span> I Use</h2>
+  <div class="tool-palette">
+<!-- Each Tool Card -->
+    <div class="tool-item">
+        <img src="images\github.svg" alt="GitHub">
+        <p>GitHub</p>
+    </div>
+
+    <div class="tool-item">
+      <img src="images\vscode.svg" alt="VS Code">
+      <p>VS Code</p>
+    </div> 
+
+    <div class="tool-item">
+        <img src="images/figma.svg" alt="Figma">
+        <p>Figma</p>
+    </div>
+
+    <div class="tool-item">
+        <img src="images/canva.svg" alt="Canva">
+        <p>Canva</p>
+    </div>
+
+    <div class="tool-item">
+        <img src="images/wix.svg" alt="Wix">
+        <p>Wix</p>
+    </div>
+
+    <div class="tool-item">
+        <img src="images/lightroom.svg" alt="Lightroom">
+        <p>Lightroom</p>
+    </div>
+
+    <div class="tool-item">
+        <img src="images\photoshop.svg" alt="Photoshop">
+        <p>Photoshop</p>
+    </div>
+
+    <div class="tool-item">
+        <img src="images\illustrator.svg" alt="Illustrator">
+        <p>Illustrator</p>
+    </div>
+</div>
+</section>
+<script>
+  const toolsSwiper = new Swiper('.tools-swiper', {
+    loop: true,
+    slidesPerView: 3,
+    spaceBetween: 30,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 3
+      },
+      480: {
+        slidesPerView: 2
+      },
+      0: {
+        slidesPerView: 1
+      }
+    }
+  });
+</script>
+
+<!-- Contact Section --> 
+<section >
+    <div class="social-icons">
+        <a href="https://www.linkedin.com/in/aman-yadav-a01367283/", target="_blank", title="linkedin", rel="noopener"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/amanydv777", target="_blank", title="github", rel="noopener"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.instagram.com/aman.ydv20/", target="_blank" , title="instagram", rel="noopener"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://linktr.ee/amanydv770", target="_blank", title="linktree", rel="noopener"><i class="fa strong fa-link"></i></a>            
+    </div>  
+<footer>
+        <div class="footer">
+            <hr>
+            <p>&copy; 2025, Developed & Designed by Aman Yadav. All rights reserved.</p>
+        </div>
+</footer>
+</section>
+
+
+
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+
 </body>
 </html>
