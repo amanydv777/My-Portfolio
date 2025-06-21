@@ -329,8 +329,7 @@ span {
     margin-bottom: 40px;
     padding: 20px ;
     border-radius: 20px;
-    box-shadow: 0 0 15px #773477;
-    border: 0.1rem solid #df21df;
+    border: 0.3rem solid #333;
     transition: transform 0.3s, background 0.3s;
     width: 100%;
     max-width: 120px;
@@ -340,6 +339,8 @@ span {
 .tool-item:hover {
     transform: translateY(-8px);
     background: #2b2b2b;
+    border: 0.1rem solid #df21df;
+    box-shadow: 0 0 15px #773477;
 }
 
 .tool-item img {
@@ -559,70 +560,6 @@ section p, section ul {
 
 
 
-#projects {
-  padding: 80px 0;
-  background-color: #111;
-  color: #fff;
-}
-
-#projects h2 {
-  text-align: center;
-  font-size: 36px;
-  margin-bottom: 30px;
-}
-
-#projects h2 span {
-  color: #df21df;
-}
-
-.projects-scroll {
-  display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  gap: 20px;
-  padding: 20px;
-  scrollbar-width: thin;
-  scrollbar-color: #df21df #222;
-}
-
-.projects-scroll::-webkit-scrollbar {
-  height: 8px;
-}
-
-.projects-scroll::-webkit-scrollbar-thumb {
-  background: #df21df;
-  border-radius: 10px;
-}
-
-.project-card {
-  flex: 0 0 300px;
-  background-color: #1a1a1a;
-  border-radius: 12px;
-  padding: 20px;
-  scroll-snap-align: start;
-  transition: transform 0.3s;
-}
-
-.project-card:hover {
-  transform: scale(1.05);
-}
-
-.project-card img {
-  width: 100%;
-  border-radius: 8px;
-  margin-bottom: 15px;
-}
-
-.project-card h3 {
-  margin: 0 0 10px;
-  font-size: 22px;
-  color: #df21df;
-}
-
-.project-card p {
-  color: #ccc;
-  font-size: 14px;
-}
 
 
 
@@ -1069,7 +1006,7 @@ footer p {
 
 /* Portfolio Section */
 #portfolio {
-    padding: 60px 20px;
+    padding: 20px;
     background: #0f0f0f;
     text-align: center;
     color: white;
@@ -1138,3 +1075,15 @@ footer p {
 .isotope-container {
   padding: 20px;
 }
+
+
+
+
+
+
+
+
+
+
+
+

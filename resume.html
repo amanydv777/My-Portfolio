@@ -13,20 +13,21 @@
     <link rel="stylesheet" href="style.css">
     <!-- Font (optional) -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body 
     data-aos-easing="ease" 
     data-aos-duration="2000" 
     data-aos-delay="0">
     <header>
-        <a href="https://amanyadav.framer.website/" class="logo", target="_blank" rel="noopener"><img src="images\logo-wmr.svg" alt="Logo" width="28"></a>
+        <a href="https://amanyadav.framer.website/" class="logo", target="_blank" rel="noopener"><img src="images\logo-wmr.svg"  data-aos="fade-down" alt="Logo" width="28"></a>
         <div class="hamburger">
             <i class="fas fa-bars"></i>
         </div>
-        <nav>
+        <nav data-aos="fade-down">
             <a href="index.html" >Home</a>
-            <a href="about.html" >About</a>
             <a href="projects.html">Projects</a>
+            <a href="about.html" >About</a>
             <a href="#resume" class="active">Resume</a>
             <a href="contact.html" >Contact</a>
         </nav>        
@@ -35,14 +36,14 @@
 
     <!-- Resume Section -->
 <section class="resume" id="resume">
-<div><p>You can view or download my Resume.</p></div>
-    <div class="resume-content">
+<div data-aos="fade-down"><p>You can view or download my Resume.</p></div>
+    <div class="resume-content" data-aos="fade-down">
         <a href="https://drive.google.com/file/d/1IWcb0rVxcBVTCwR1g_GfI0PMhSYjZ11v/view?usp=sharing" class="btn" target="_blank" rel="noopener"><i class="fa-solid fa-download download-icon"></i> Download CV</a>
     </div><br>
     
 </section>
 <section>
-<div class="resume-frame">
+<div class="resume-frame" data-aos="fade-up">
     <iframe
         src="https://drive.google.com/file/d/1IWcb0rVxcBVTCwR1g_GfI0PMhSYjZ11v/preview"
         width="100%"
@@ -66,5 +67,17 @@
         </div>
     </footer>
     </section>
+
+<!-- Before </body> -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    once: true, // Animation only once
+  });
+</script>
+
+
+
 </body>
 </html>

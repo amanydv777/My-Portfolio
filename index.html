@@ -14,22 +14,23 @@
     <link rel="stylesheet" href="style.css">
     <!-- Font (optional) -->
       <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-</head>
 
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
 <body
   data-aos-easing="ease" 
     data-aos-duration="2000" 
     data-aos-delay="0">
-    
+
     <header>
-        <a href="https://amanyadav.framer.website/" class="logo", target="_blank" rel="noopener"><img src="images\logo-wmr.svg" alt="Logo" width="28"></a>
+        <a href="https://amanyadav.framer.website/" class="logo", target="_blank" rel="noopener"><img src="images\logo-wmr.svg" data-aos="fade-down" alt="Logo" width="28"></a>
         <div class="hamburger">
             <i class="fas fa-bars"></i>
         </div>
-        <nav>
+        <nav data-aos="fade-down">
             <a href="#" class="active">Home</a>
-            <a href="about.html">About</a>
             <a href="projects.html">Projects</a>
+            <a href="about.html">About</a>
             <a href="resume.html" >Resume</a>
             <a href="contact.html" >Contact</a>
         </nav>        
@@ -37,11 +38,11 @@
 
     <!-- Home Section -->
     <section class="home">
-        <div class="home-img">
+        <div class="home-img" data-aos="fade-right">
             <img src="images\main.jpg" alt="hero-img">
         </div>
 
-        <div class="home-content">
+        <div class="home-content" data-aos="fade-left">
             <h2>Hi There..! <br>I'm <span>Aman Yadav</span></h2>
             <h3 class="typing-text">I'm a <span id></span></h3><br>
             <a href="https://drive.google.com/file/d/1IWcb0rVxcBVTCwR1g_GfI0PMhSYjZ11v/view?usp=sharing" class="btn" target="_blank" rel="noopener">My Resume</a>
@@ -50,35 +51,35 @@
 
 <!-- Skills Section -->
 <section id="tool-palette" class="tool-palette-section">  
-  <h2>My <span>Skills</span></h2>
+  <h2 data-aos="fade-right">My <span>Skills</span></h2>
   <div class="tool-palette">
   <!-- Each Skills Card -->
-  <div class="tool-item">
+  <div class="tool-item" data-aos="fade-up">
     <img src="images/html.svg" alt="HTML">
     <p>HTML</p>
   </div>
 
-  <div class="tool-item">
+  <div class="tool-item" data-aos="fade-up">
       <img src="images/css.svg" alt="CSS">
       <p>CSS</p>
   </div>
 
-  <div class="tool-item">
+  <div class="tool-item" data-aos="fade-up">
       <img src="images/javascript.svg" alt="JavaScript">
       <p>JavaScript</p>
   </div>
 
-  <div class="tool-item">
+  <div class="tool-item" data-aos="fade-up">
       <img src="images\c.svg" alt="C">
       <p>C</p>
   </div>
 
-  <div class="tool-item">
+  <div class="tool-item" data-aos="fade-up">
       <img src="images/cpp.svg" alt="C++">
       <p>C++</p>
   </div>
 
-  <div class="tool-item">
+  <div class="tool-item" data-aos="fade-up">
       <img src="images\python.svg" alt="Python">
       <p>Python</p>
   </div>
@@ -86,138 +87,50 @@
   
 <!-- Technical Tools Section -->
   
-  <h2>Tech <span>Tools</span> I Use</h2>
+  <h2 data-aos="fade-right">Tech <span>Tools</span> I Use</h2>
   <div class="tool-palette">
 <!-- Each Tool Card -->
-    <div class="tool-item">
+    <div class="tool-item" data-aos="fade-up">
         <img src="images\github.svg" alt="GitHub">
         <p>GitHub</p>
     </div>
 
-    <div class="tool-item">
+    <div class="tool-item" data-aos="fade-up">
       <img src="images\vscode.svg" alt="VS Code">
       <p>VS Code</p>
     </div> 
 
-    <div class="tool-item">
+    <div class="tool-item" data-aos="fade-up">
         <img src="images/figma.svg" alt="Figma">
         <p>Figma</p>
     </div>
 
-    <div class="tool-item">
+    <div class="tool-item" data-aos="fade-up">
         <img src="images/canva.svg" alt="Canva">
         <p>Canva</p>
     </div>
 
-    <div class="tool-item">
+    <div class="tool-item" data-aos="fade-up">
         <img src="images/wix.svg" alt="Wix">
         <p>Wix</p>
     </div>
 
-    <div class="tool-item">
+    <div class="tool-item" data-aos="fade-up">
         <img src="images/lightroom.svg" alt="Lightroom">
         <p>Lightroom</p>
     </div>
 
-    <div class="tool-item">
+    <div class="tool-item" data-aos="fade-up">
         <img src="images\photoshop.svg" alt="Photoshop">
         <p>Photoshop</p>
     </div>
 
-    <div class="tool-item">
+    <div class="tool-item" data-aos="fade-up">
         <img src="images\illustrator.svg" alt="Illustrator">
         <p>Illustrator</p>
     </div>
   </div>
 </section>
-
-
-<!-- Testimonial Section -->
-<section id="testimonial">
-  <div class="container">
-    <h2>Work <span>Experience</span></h2>
-
-    <div class="swiper testimonial-swiper">
-      <div class="swiper-wrapper">
-
-        <!-- Slide 1 -->
-        <div class="swiper-slide">
-          <div class="testimonial-details">
-            <p>"A wonderful experience working with Aman!"</p>
-            <div class="testimonial-client">
-              <img src="images/commentor1.jpg" alt="Client 1">
-              <div>
-                <h6>Alex Carter</h6>
-                <p>Founder - WebStorm</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Slide 2 -->
-        <div class="swiper-slide">
-          <div class="testimonial-details">
-            <p>"Aman is a fantastic developer. He delivered beyond expectations!"</p>
-            <div class="testimonial-client">
-              <img src="images/commentor1.jpg" alt="Client 2">
-              <div>
-                <h6>Emma Brown</h6>
-                <p>CEO - Squirrel Sweets</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Slide 3 -->
-        <div class="swiper-slide">
-          <div class="testimonial-details">
-            <p>"Highly recommend Aman for any web project. Creative and reliable."</p>
-            <div class="testimonial-client">
-              <img src="images/commentor1.jpg" alt="Client 3">
-              <div>
-                <h6>John Doe</h6>
-                <p>CTO - TechNova</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Slide 4 -->
-        <div class="swiper-slide">
-          <div class="testimonial-details">
-            <p>"Delivered our project on time with excellent quality. Thanks Aman!"</p>
-            <div class="testimonial-client">
-              <img src="images/commentor1.jpg" alt="Client 4">
-              <div>
-                <h6>Jane Smith</h6>
-                <p>Manager - Visionary Apps</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Pagination Dots -->
-      <div class="swiper-pagination"></div>
-    </div>
-  </div>
-</section>
-<!-- JS Code for testimonial-->
-<script>
-  var testimonialSwiper = new Swiper(".testimonial-swiper", {
-    loop: true,
-    autoplay: {
-      delay: 2000, // 3 seconds
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-  });
-</script>
-
 
 
 
@@ -226,28 +139,28 @@
 <!--Tools Section -->
 
 <section id="tools" class="tools-section">
-  <h2 class="section-title">My <span>Services</span></h2>
+  <h2 class="section-title" data-aos="fade-right">My <span>Services</span></h2>
 
   <!-- Swiper Container -->
   <div class="swiper tools-swiper">
     <div class="swiper-wrapper">
       <!-- Slides -->
-      <div class="swiper-slide tool-slide">
+      <div class="swiper-slide tool-slide" data-aos="fade-right">
         <img src="project/uidesign.png" alt="UI" />
         <h3>UI Designing</h3>
         <p>I create effective UI designs by understanding your goals,crafting wireframes, prototyping, responsiveness, and accessibility.</p>
       </div>
-      <div class="swiper-slide tool-slide">
+      <div class="swiper-slide tool-slide" data-aos="fade-right">
         <img src="project/uxdesign.png" alt="ux" />
         <h3>UX Psychology</h3>
         <p>I leverage UX psychology to satisfaction, engagement and conversion. By understanding user behaviour, I design interfaces that align with their needs for better experiences.</p>
       </div>
-      <div class="swiper-slide tool-slide">
+      <div class="swiper-slide tool-slide" data-aos="fade-right">
         <img src="project/html.png" alt="Translating Designs" >
         <h3>Translating Designs</h3>
         <p>I convert visual elements from a design file(like Figma) into corresponding HTML code and CSS styles.</p>
       </div>
-      <div class="swiper-slide tool-slide">
+      <div class="swiper-slide tool-slide" data-aos="fade-right">
         <img src="project/user-research.png" alt="user-research" />
         <h3>User Research</h3>
         <p>It involves systematically gathering data about users to create products and services.Understanding the process of users needs, behaviours for the services. </p>
@@ -256,8 +169,8 @@
     </div>
 
     <!-- Navigation Arrows -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev" data-aos="fade-right"></div>
+    <div class="swiper-button-next" data-aos="fade-right"></div>
 
     <!-- Pagination Dots -->
     <div class="swiper-pagination"></div>
@@ -361,6 +274,14 @@ const swiper = new Swiper('.testimonial-swiper', {
 
 
 
+<!-- Before </body> -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    once: true, // Animation only once
+  });
+</script>
 
 
 

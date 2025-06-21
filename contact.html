@@ -13,20 +13,21 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
     <!-- Font (optional) -->
-      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 </head>
 
 <body>
     <header>
-        <a href="https://amanyadav.framer.website/" class="logo", target="_blank" rel="noopener"><img src="images\logo-wmr.svg" alt="Logo" width="28"></a>
+        <a href="https://amanyadav.framer.website/" class="logo", target="_blank" rel="noopener"><img src="images\logo-wmr.svg" data-aos="fade-down" alt="Logo" width="28"></a>
         <div class="hamburger">
             <i class="fas fa-bars"></i>
         </div>
-        <nav>
+        <nav data-aos="fade-down">
             <a href="index.html" >Home</a>
-            <a href="about.html">About</a>
             <a href="projects.html">Projects</a>
+            <a href="about.html">About</a>
             <a href="resume.html" >Resume</a>
             <a href="#contact" class="active">Contact</a>
         </nav>        
@@ -35,13 +36,13 @@
 <!-- Contact Section --> 
 <section>
     <div class="contact" , id="contact">
-        <h2>Let’s work <span>together</span></h2>
-        <p>
+        <h2 data-aos="fade-right">Let’s work <span>together</span></h2>
+        <p data-aos="fade-right">
         I’m available for freelance work. Do you have any projects in your mind ? <br>
         Just feel free to contact me
         </p>                
         <!-- Contact Form -->
-        <form action="https://formsubmit.co/amanydv770@gmail.com" method="POST" class="contact-form">
+        <form action="https://formsubmit.co/amanydv770@gmail.com" method="POST" class="contact-form" data-aos="fade-left">
             <input type="text" name="name" placeholder="Your Name" required>
             <input type="email" name="email" placeholder="Your Email" required>
             <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
@@ -65,6 +66,17 @@
         </div>
     </footer>
 </section>
+
+<!-- Before </body> -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    once: true, // Animation only once
+  });
+</script>
+
+
 
 </body>
 </html>

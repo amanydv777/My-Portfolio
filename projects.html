@@ -13,20 +13,21 @@
     <link rel="stylesheet" href="style.css">
     <!-- Font (optional) -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body 
     data-aos-easing="ease" 
     data-aos-duration="2000" 
     data-aos-delay="0">
     <header>
-        <a href="https://amanyadav.framer.website/" class="logo", target="_blank" rel="noopener"><img src="images\logo-wmr.svg" alt="Logo" width="28"></a>
+        <a href="https://amanyadav.framer.website/" class="logo", target="_blank" rel="noopener"><img src="images\logo-wmr.svg" data-aos="fade-down" alt="Logo" width="28"></a>
         <div class="hamburger">
             <i class="fas fa-bars"></i>
         </div>
-        <nav>
+        <nav data-aos="fade-down">
             <a href="index.html" >Home</a>
-            <a href="about.html" >About</a>
             <a href="#projects" class="active">Projects</a>
+            <a href="about.html" >About</a>
             <a href="resume.html">Resume</a>
             <a href="contact.html" >Contact</a>
         </nav>        
@@ -37,117 +38,85 @@
     data-aos-delay="0">
     >
 
-<section id="projects">
-<div class="container">
-    <h2>My <span>Projects</span></h2>
-    <div class="projects-scroll">
-    <!-- Project 1 -->
-    <div class="project-card">
-        <img src="images/project1.jpg" alt="Project 1">
-        <h3>Project One</h3>
-        <p>Responsive Portfolio Website</p>
-    </div>
-
-    <!-- Project 2 -->
-    <div class="project-card">
-        <img src="images/project2.jpg" alt="Project 2">
-        <h3>Project Two</h3>
-        <p>E-commerce Web App</p>
-    </div>
-
-    <!-- Project 3 -->
-    <div class="project-card">
-        <img src="images/project3.jpg" alt="Project 3">
-        <h3>Project Three</h3>
-        <p>React JS Dashboard</p>
-    </div>
-
-    <!-- Add more projects as needed -->
-    </div>
-</div>
-</section>
-
-<script>
-  // Optional: Auto-scroll a little on load
-window.addEventListener('load', () => {
-    document.querySelector('.projects-scroll').scrollLeft = 100;
-});
-</script>
-
-
 <!-- Portfolio Section -->
 <section id="portfolio">
-  <h2>My <span>Projects</span></h2>
+    <h2 data-aos="fade-right" >My <span>Projects</span></h2>
+    <div class="portfolio-filters" data-aos="fade-right" >
+        <button class="filter-btn active" data-filter="*">All</button>
+        <button class="filter-btn" data-filter=".ui">UI Designs</button>
+        <button class="filter-btn" data-filter=".web">Webpages</button>
+        <button class="filter-btn" data-filter=".wireframe">Wireframe</button>
+        <button class="filter-btn" data-filter=".product">Product Designs</button>
+        <button class="filter-btn" data-filter=".logo">Logo Designs</button>
+    </div>
 
-  <div class="portfolio-filters">
-    <button class="filter-btn active" data-filter="*">All</button>
-    <button class="filter-btn" data-filter=".ui">UI Designs</button>
-    <button class="filter-btn" data-filter=".web">Webpages</button>
-    <button class="filter-btn" data-filter=".wireframe">Wireframe</button>
-    <button class="filter-btn" data-filter=".product">Product Designs</button>
-    <button class="filter-btn" data-filter=".logo">Logo Designs</button>
-  </div>
+    <div class="portfolio-items" data-aos="fade-up">
+        <a href="https://www.figma.com/design/jgbtRGwBqhf3XnNSx8ag7y/New-ChatGPT-App-Designs?m=auto&t=gJfukpM5BNfjJbJC-1" target="_blank" rel="noopener">
+        <div class="item ui">
+            <img src="project\ChatGPT.png" alt="Project">
+            <h4>Chat-GPT UI Re-Design</h4>
+        </div></a>  
 
-  <div class="portfolio-items">
-    <a href="figma" >
-    <div class="item ui">
-      <img src="project\ChatGPT.png" alt="Project">
-      <h4>Chat-GPT UI Re-Design</h4>
-    </div></a>  
-
-    <a href="figma" >
-    <div class="item ui">
-      <img src="project\leaderboard.png" alt="Project">
-      <h4>Leaderboard Design</h4>
+    <a href="https://www.figma.com/design/J0otIugXulGMam2vXhorip/LIT-Leaderboard?m=auto&t=gJfukpM5BNfjJbJC-1" target="_blank" rel="noopener">
+    <div class="item ui" data-aos="fade-up">
+        <img src="project\leaderboard.png" alt="Project">
+        <h4>Leaderboard Design</h4>
     </div></a>
     
-    <a href="figma" >
-    <div class="item ui">
-      <img src="project\zomato.png" alt="Project">
-      <h4>Zomato Re-Design</h4>
+    <a href="https://www.figma.com/proto/KVbIXiMHuDjH3EXvjXFc0w?node-id=0-1&t=gJfukpM5BNfjJbJC-6" target="_blank" rel="noopener">
+    <div class="item ui" data-aos="fade-up">
+        <img src="project\zomato.png" alt="Project">
+        <h4>Zomato Re-Design</h4>
     </div></a>
-    
-    <a href="figma" >
-    <div class="item wireframe">
-      <img src="project\wireframing.png" alt="Project">
-      <h4>Wireframe</h4>
-    </div></a>
-    
-    <a href="figma" >
-    <div class="item product">
-    <img src="project\nike.png" alt="Project">
-    <h4>Nike - Air Max</h4>
+        
+    <a href="https://www.figma.com/design/J79FGEgcq0lMndy4xC1P3g/Nike-Poster?m=auto&t=gJfukpM5BNfjJbJC-6" target="_blank" rel="noopener">
+    <div class="item product" data-aos="fade-up">
+        <img src="project\nike.png" alt="Project">
+        <h4>Nike - Air Max</h4>
     </div>
     </a>
     
-    <div class="item logo">
-    <img src="project\Consumable-AI.png" alt="Project">
-    <h4>Consumable - AI Logo</h4>
+    <div class="item logo" data-aos="fade-up">
+        <img src="project\Consumable-AI.png" alt="Project">
+        <h4>Consumable - AI Logo</h4>
     </div>
     
-    <a href="figma" >
-    <div class="item ui">
-    <img src="project\ui_login.png" alt="Project">
-    <h4>Login/SignUp Page UI</h4>
-    </div></a>
-    
-    <div class="item logo">
-    <img src="project\lit-logo.png" alt="Project">
-    <h4></h4>Logo Designs</h4>
+    <a href="https://www.figma.com/design/HPsaMXtyJ0BC4heAmULxxo/Luxury-In-Taste-App-Icon-Ideas-?m=auto&t=4ESFJvLjKN4QIJ7O-6" target="_blank" rel="noopener">
+    <div class="item logo" data-aos="fade-up">
+        <img src="project\logo-lit.png" alt="Project">
+        <h4>Logo Design</h4>
     </div>
     
-    <a href="figma" >
-    <div class="item web">
-      <img src="project\college-orbit.png" alt="Project">
-      <h4>College Listing Website UI</h4>
+        <a href="https://www.figma.com/design/uCGYALYyp6KoAZLB5dT544/Wireframing?m=auto&t=gJfukpM5BNfjJbJC-6" target="_blank" rel="noopener">
+    <div class="item wireframe" data-aos="fade-up">
+        <img src="project\wireframing.png" alt="Project">
+        <h4>Wireframe</h4>
+    </div></a>
+
+    <a href="https://www.figma.com/design/EBi67mflYCxUvwRqwZruUO/Mobile-Login---Sign-Up-UI?m=auto&t=gJfukpM5BNfjJbJC-6" target="_blank" rel="noopener">
+    <div class="item ui" data-aos="fade-up">
+        <img src="project\ui_login.png" alt="Project">
+        <h4>Login/SignUp Page UI</h4>
     </div></a>
     
-    <a href="figma" >
-    <div class="item web">
-      <img src="project/EDU123.png" alt="Project">
-      <h4>Web Project</h4>
+    <a href="https://www.figma.com/design/gOAt37UlMavAiFDU07Ipsi/PROJECTS?m=auto&t=gJfukpM5BNfjJbJC-6" target="_blank" rel="noopener">
+    <div class="item web" data-aos="fade-up">
+        <img src="project\college-orbit.png" alt="Project">
+        <h4>College Listing Website UI</h4>
     </div></a>
-  </div>
+    
+    <a href="https://www.figma.com/design/qujRHNbSbPcNA2ruQ2IHYm/EDU123?m=auto&t=4ESFJvLjKN4QIJ7O-6" target="_blank" rel="noopener">
+    <div class="item web" data-aos="fade-up">
+        <img src="project/EDU123.png" alt="Project">
+        <h4>Webpage Project</h4>
+    </div></a>
+        <a href="https://amanyadav.framer.website/" target="_blank" rel="noopener">
+    <div class="item ui" data-aos="fade-up">
+        <img src="project\ui-framer.jpg" alt="Project">
+        <h4>Created UI Self Portfolio </h4>
+    </div></a>
+
+</div>
 </section>
 
 
@@ -156,21 +125,21 @@ window.addEventListener('load', () => {
 
 <script>
   // Initialize Isotope
-  const iso = new Isotope('.portfolio-items', {
+    const iso = new Isotope('.portfolio-items', {
     itemSelector: '.item',
     layoutMode: 'fitRows'
-  });
+    });
 
   // Filter buttons
-  const buttons = document.querySelectorAll('.filter-btn');
-  buttons.forEach(button => {
+    const buttons = document.querySelectorAll('.filter-btn');
+    buttons.forEach(button => {
     button.addEventListener('click', () => {
-      buttons.forEach(btn => btn.classList.remove('active'));
-      button.classList.add('active');
-      const filterValue = button.getAttribute('data-filter');
-      iso.arrange({ filter: filterValue });
+    buttons.forEach(btn => btn.classList.remove('active'));
+    button.classList.add('active');
+    const filterValue = button.getAttribute('data-filter');
+    iso.arrange({ filter: filterValue });
     });
-  });
+});
 </script>
 
 <!-- Contact Section --> 
@@ -189,7 +158,7 @@ window.addEventListener('load', () => {
 </footer>
 </section>
 
-!-- Swiper CSS -->
+<!-- Swiper CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
 <!-- Swiper JS -->
@@ -210,6 +179,17 @@ window.addEventListener('load', () => {
     <script src="js/plugins.js"></script>
     <script src="js/script.js"></script>
     <script src="script.js"></script>
+
+<!-- Before </body> -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+    AOS.init({
+    duration: 800,
+    once: true, // Animation only once
+    });
+</script>
+
+
 
 </body>
 </html>
