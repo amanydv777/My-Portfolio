@@ -75,94 +75,103 @@ window.addEventListener('load', () => {
 </script>
 
 
-<section id="portfolio" class="padding-medium container-fluid pt-0 aos-init aos-animate" data-aos="fade-up">
-        <div class="text-center">
-            <h3 class="display-5 fw-bold">
-                Portfolio
-            </h3>
-            <div class="my-5">
-                <p>
-                    <button class="filter-button px-3 mb-3 active" data-filter="*">
-                        All
-                    </button>
-                    <button class="filter-button px-3 mb-3" data-filter=".branding">
-                        Branding
-                    </button>
-                    <button class="filter-button px-3 mb-3" data-filter=".tshirt">
-                        T-shirt
-                    </button>
-                    <button class="filter-button px-3 mb-3" data-filter=".package">
-                        Package
-                    </button>
-                    <button class="filter-button px-3 mb-3" data-filter=".poster">
-                        Poster
-                    </button>
-                </p>
-            </div>
-        </div>
-        <div class="isotope-container row" style="position: relative; height: 2448.52px;">
-            <div class="item tshirt col-md-4 p-3" style="position: absolute; left: 0px; top: 0px;">
-                <div class="project-content position-relative bg-black">
-                    <img class="project-img img-fluid" src="images/portfolio1.jpg" alt="img">
-                    <div class="project-description p-5 position-absolute bottom-0 start-0">
-                        <h4 class="text-white">ultra jot Coffee</h4>
-                        <a href="portfolio-details.html" class="text-white text-decoration-underline">Learn More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="item branding col-md-4 p-3" style="position: absolute; left: 0px; top: 344.297px;">
-                <div class="project-content position-relative bg-black">
-                    <img class="project-img img-fluid" src="images/portfolio2.jpg" alt="img">
-                    <div class="project-description p-5 position-absolute bottom-0 start-0">
-                        <h4 class="text-white">ultra jot Coffee</h4>
-                        <a href="portfolio-details.html" class="text-white text-decoration-underline">Learn More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="item tshirt col-md-4 p-3" style="position: absolute; left: 0px; top: 816.735px;">
-                <div class="project-content position-relative bg-black">
-                    <img class="project-img img-fluid" src="images/portfolio4.jpg" alt="img">
-                    <div class="project-description p-5 position-absolute bottom-0 start-0">
-                        <h4 class="text-white">ultra jot Coffee</h4>
-                        <a href="portfolio-details.html" class="text-white text-decoration-underline">Learn More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="item branding col-md-4 p-3" style="position: absolute; left: 0px; top: 1159.45px;">
-                <div class="project-content position-relative bg-black">
-                    <img class="project-img img-fluid" src="images/portfolio3.jpg" alt="img">
-                    <div class="project-description p-5 position-absolute bottom-0 start-0">
-                        <h4 class="text-white">ultra jot Coffee</h4>
-                        <a href="portfolio-details.html" class="text-white text-decoration-underline">Learn More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="item package col-md-4 p-3" style="position: absolute; left: 0px; top: 1632.6px;">
-                <div class="project-content position-relative bg-black">
-                    <img class="project-img img-fluid" src="images/portfolio5.jpg" alt="img">
-                    <div class="project-description p-5 position-absolute bottom-0 start-0">
-                        <h4 class="text-white">ultra jot Coffee</h4>
-                        <a href="portfolio-details.html" class="text-white text-decoration-underline">Learn More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="item poster col-md-4 p-3" style="position: absolute; left: 0px; top: 2105.3px;">
-                <div class="project-content position-relative bg-black">
-                    <img class="project-img img-fluid" src="images/portfolio6.jpg" alt="img">
-                    <div class="project-description p-5 position-absolute bottom-0 start-0">
-                        <h4 class="text-white">ultra jot Coffee</h4>
-                        <a href="portfolio-details.html" class="text-white text-decoration-underline">Learn More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="text-center mt-5">
-            <a href="#" class="btn btn-dark me-4">
-                View Portfolios
-            </a>
-        </div>
-    </section>
+<!-- Portfolio Section -->
+<section id="portfolio">
+  <h2>My <span>Projects</span></h2>
 
+  <div class="portfolio-filters">
+    <button class="filter-btn active" data-filter="*">All</button>
+    <button class="filter-btn" data-filter=".ui">UI Designs</button>
+    <button class="filter-btn" data-filter=".web">Webpages</button>
+    <button class="filter-btn" data-filter=".wireframe">Wireframe</button>
+    <button class="filter-btn" data-filter=".product">Product Designs</button>
+    <button class="filter-btn" data-filter=".logo">Logo Designs</button>
+  </div>
+
+  <div class="portfolio-items">
+    <a href="figma" >
+    <div class="item ui">
+      <img src="project\ChatGPT.png" alt="Project">
+      <h4>Chat-GPT UI Re-Design</h4>
+    </div></a>  
+
+    <a href="figma" >
+    <div class="item ui">
+      <img src="project\leaderboard.png" alt="Project">
+      <h4>Leaderboard Design</h4>
+    </div></a>
+    
+    <a href="figma" >
+    <div class="item ui">
+      <img src="project\zomato.png" alt="Project">
+      <h4>Zomato Re-Design</h4>
+    </div></a>
+    
+    <a href="figma" >
+    <div class="item wireframe">
+      <img src="project\wireframing.png" alt="Project">
+      <h4>Wireframe</h4>
+    </div></a>
+    
+    <a href="figma" >
+    <div class="item product">
+    <img src="project\nike.png" alt="Project">
+    <h4>Nike - Air Max</h4>
+    </div>
+    </a>
+    
+    <div class="item logo">
+    <img src="project\Consumable-AI.png" alt="Project">
+    <h4>Consumable - AI Logo</h4>
+    </div>
+    
+    <a href="figma" >
+    <div class="item ui">
+    <img src="project\ui_login.png" alt="Project">
+    <h4>Login/SignUp Page UI</h4>
+    </div></a>
+    
+    <div class="item logo">
+    <img src="project\lit-logo.png" alt="Project">
+    <h4></h4>Logo Design</h4>
+    </div>
+    
+    <a href="figma" >
+    <div class="item web">
+      <img src="project\college-orbit.png" alt="Project">
+      <h4>College Listing Website UI</h4>
+    </div></a>
+    
+    <a href="figma" >
+    <div class="item web">
+      <img src="project/EDU123.png" alt="Project">
+      <h4>Webpage Project</h4>
+    </div></a>
+  </div>
+</section>
+
+
+<!-- Isotope Library -->
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+<script>
+  // Initialize Isotope
+  const iso = new Isotope('.portfolio-items', {
+    itemSelector: '.item',
+    layoutMode: 'fitRows'
+  });
+
+  // Filter buttons
+  const buttons = document.querySelectorAll('.filter-btn');
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+      buttons.forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+      const filterValue = button.getAttribute('data-filter');
+      iso.arrange({ filter: filterValue });
+    });
+  });
+</script>
 
 <!-- Contact Section --> 
 <section >

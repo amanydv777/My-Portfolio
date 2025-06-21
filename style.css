@@ -572,7 +572,7 @@ section p, section ul {
 }
 
 #projects h2 span {
-  color: #00ffe0;
+  color: #df21df;
 }
 
 .projects-scroll {
@@ -582,7 +582,7 @@ section p, section ul {
   gap: 20px;
   padding: 20px;
   scrollbar-width: thin;
-  scrollbar-color: #00ffe0 #222;
+  scrollbar-color: #df21df #222;
 }
 
 .projects-scroll::-webkit-scrollbar {
@@ -590,7 +590,7 @@ section p, section ul {
 }
 
 .projects-scroll::-webkit-scrollbar-thumb {
-  background: #00ffe0;
+  background: #df21df;
   border-radius: 10px;
 }
 
@@ -616,7 +616,7 @@ section p, section ul {
 .project-card h3 {
   margin: 0 0 10px;
   font-size: 22px;
-  color: #00ffe0;
+  color: #df21df;
 }
 
 .project-card p {
@@ -669,6 +669,7 @@ section p, section ul {
 .tools-swiper .swiper-slide p {
     color: #ccc;
     font-size: 1.5rem;
+    margin: 20px;
 }
 
 .tools-swiper .swiper-slide h3 {
@@ -719,7 +720,7 @@ body {
 .contact {
     text-align: center;
     padding: 50px 20px;
-    background-color: #0f0f0f;
+    background-color: black;
     color: #fff;
     margin: top auto;;
 }
@@ -910,8 +911,230 @@ footer p {
 
 
 
+.resume {
+  background-color: black;
+  color: white;
+  padding: 60px 20px; /* top/bottom and left/right padding */
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.resume p {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  color: #ccc;
+}
+
+.resume-content .btn {
+  padding: 12px 30px;
+  font-size: 1.5rem;
+  border-radius: 25px;
+  border: 2px solid #df21df;
+  background-color: transparent;
+  color: #df21df;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.resume-content .btn:hover {
+  background-color: #df21df;
+  color: #0f0f0f;
+  box-shadow: 0 0 10px #df21df;
+}
+
+@media (max-width: 768px) {
+  .resume {
+    padding: 40px 15px;
+  }
+
+  .resume-content .btn {
+    width: 80%;
+    font-size: 1.4rem;
+  }
+}
+.resume-content .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 30px;
+  font-size: 1.5rem;
+  border-radius: 25px;
+  border: 2px solid #df21df;
+  background-color: transparent;
+  color: #df21df;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.resume-content .btn .download-icon {
+  margin-right: 10px;
+  font-size: 1.6rem; /* slightly larger than the text */
+}
+
+.resume-content .btn:hover {
+  background-color: #df21df;
+  color: #0f0f0f;
+  box-shadow: 0 0 10px #df21df;
+}
+
+
+.resume {
+  padding: 50px 20px;
+  background-color: #0f0f0f;
+  color: white;
+  text-align: center;
+}
+
+.resume h2 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  color: #df21df;
+}
+
+.resume-frame {
+  max-width: 900px;
+  margin: auto;
+  border: 1.5px solid #df21df;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 15px #421e42;
+}
+
+
+
+.about-section {
+    padding: 60px 20px;
+    background-color: black;
+    color: #fff;
+    text-align: left;
+}
+
+
+
+.about-section p {
+    font-size: 1.8rem;
+    max-width: 800px;
+    margin: 10px auto;
+    color: #ccc;
+    line-height: 1.6;
+}
+
+/* Hobbies inside About Section */
+.hobbies-section {
+  margin-top: 30px;
+  max-height: 300px;
+}
+
+.hobbies-section p {
+    font-size: 1.9rem;
+    max-width: 800px;
+    margin: 10px auto;
+    color: #ccc;
+    line-height: 1.6;
+    text-align: left;
+  
+}
+
+.interest-list {
+  list-style: none;
+  padding: 10px 0 ; /* Top and bottom padding */
+  max-height: 150px; /* Set a reasonable max height */
+  gap: 18px;
+}
+
+.interest-list li {
+  color: white;
+  padding: 12px 20px;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: left;
+  gap: 10px;
+  transition: all 0.3s ease;
+}
+
+.interest-list li:hover {
+  color: #df21df;
+  transform: scale(1.05);
+}
+
+.interest-list i {
+  font-size: 1.5rem;
+}
 
 
 
 
 
+
+/* Portfolio Section */
+#portfolio {
+    padding: 60px 20px;
+    background: #0f0f0f;
+    text-align: center;
+    color: white;
+    margin-bottom: 5px;
+}
+
+#portfolio h2 {
+    font-size: 4rem;
+    margin-bottom: 30px;
+}
+#portfolio h2 span {
+    color: #df21df;
+}
+
+.portfolio-filters {
+    margin-bottom: 40px;
+}
+.filter-btn {
+    padding: 10px 20px;
+    margin: 0 5px 10px;
+    background: #1a1a1a;
+    border: 1px solid #df21df;
+    color: #df21df;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+}
+.filter-btn.active,
+.filter-btn:hover {
+    background: #df21df;
+    color: #0f0f0f;
+}
+
+.portfolio-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px; /* This adds spacing between .item blocks */
+  justify-content: center;
+  align-items: center;
+}
+
+.item {
+  background: #1b1b1b;
+  border: 1px solid #333;
+  min-width: 290px;
+  padding: 25px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  margin: 10px; /* Add spacing between items */
+  align-items: center;
+}
+.item img {
+  width: auto;
+  max-height: 180px;
+  border-radius: 8px;
+}
+.item h4 {
+  margin-top: 10px;
+  color: white;
+  font-size: 1.5rem;
+}
+.item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 10px #df21df;
+}
+.isotope-container {
+  padding: 20px;
+}
