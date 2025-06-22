@@ -246,10 +246,10 @@ span {
         content: "UI/UX Designer.";
     }
     51%, 75%{
-        content: "Developer.";
+        content: " FrontEnd Developer.";
     }
     76%, 100%{
-        content: "Web Designer.";
+        content: "Graphic Designer.";
     }
 }
 
@@ -543,7 +543,7 @@ section h3 {
 section p, section ul {
     font-size: 1.5rem;
     max-width: 700px;
-    margin: 0 auto 200px;
+    margin: 0 auto 30px;
     color:white;
 }
 
@@ -778,6 +778,24 @@ body {
 
 
 /* Social Icons Styling */
+
+@media (max-width: 600px) {
+  .social-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .social-icons a {
+    width: 4.5rem;
+    height: 4.5rem;
+    font-size: 2.2rem;
+    margin: 1rem;
+  }
+}
+
 .social-icons a {
     display: inline-flex;
     justify-content: center;
@@ -788,7 +806,7 @@ body {
     border: 0.2rem solid #df21df;
     font-size: 2rem;
     border-radius: 50%;
-    margin: 3rem 1.5rem 3rem 0;
+    margin: 3rem 1.5rem 2rem 0;
     transition: 0.3s ease;
     color: #df21df;
 }
@@ -814,16 +832,24 @@ tool-palette-section hr{
 }
 
 /* Footer Styling */
+
+.footer-section {
+  padding: 10px 73px;
+  background: #0f0f0f;
+  color: #fff;
+  text-align: center;
+}
+
 footer {
     background-color: black;
     padding: 0px ;
     color: #0a0a0a;
-    padding-bottom: 0% ;
+    padding-bottom: 0px ;
 }
 
 .footer-section {
-    padding: 10px 73px ;
-    background: #0f0f0f;
+    padding: 0px 73px ;
+    background: black;
     color: #fff;
     text-align: center;
     margin: 0;
@@ -843,6 +869,19 @@ footer p {
     text-align: center;
 }
 
+body {
+  margin-bottom: 0;
+}
+
+footer {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+body > *:last-child {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
 
 
 
