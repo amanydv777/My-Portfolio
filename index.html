@@ -46,15 +46,6 @@
         </nav>        
     </header>
 
-<script>
-    const hamburger = document.querySelector('.hamburger');
-    const nav = document.querySelector('nav');
-
-    hamburger.addEventListener('click', () => {
-        nav.classList.toggle('active');
-    });
-</script>
-
 
     <!-- Home Section -->
     <section class="home">
@@ -204,22 +195,6 @@
 
 
 
-<!-- Swiper Init -->
-<script>
-const swiper = new Swiper('.testimonial-swiper', {
-    loop: true,
-    slidesPerView: 1,
-    spaceBetween: 30,
-    autoplay: {
-    delay: 4000,
-    disableOnInteraction: false,
-    },
-    pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-    },
-});
-</script>
 
 
 
@@ -261,6 +236,22 @@ const swiper = new Swiper('.testimonial-swiper', {
     <script src="js/script.js"></script>
     <script src="script.js"></script>
 
+<!-- Swiper Init -->
+<script>
+const swiper = new Swiper('.testimonial-swiper', {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 30,
+    autoplay: {
+    delay: 4000,
+    disableOnInteraction: false,
+    },
+    pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    },
+});
+</script>
 
 <script>
   const toolsSwiper = new Swiper('.tools-swiper', {
@@ -313,6 +304,14 @@ const swiper = new Swiper('.testimonial-swiper', {
 
 
 
+<script>
+    const hamburger = document.querySelector('.hamburger');
+    const nav = document.querySelector('nav');
+
+    hamburger.addEventListener('click', () => {
+        nav.classList.toggle('active');
+    });
+</script>
 
 
 

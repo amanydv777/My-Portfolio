@@ -32,14 +32,6 @@
             <a href="#contact" class="active">Contact</a>
         </nav>        
     </header>
-<script>
-    const hamburger = document.querySelector('.hamburger');
-    const nav = document.querySelector('nav');
-
-    hamburger.addEventListener('click', () => {
-        nav.classList.toggle('active');
-    });
-</script>
 
 <!-- Contact Section --> 
 <section>
@@ -90,6 +82,14 @@
 <!-- Custom JS -->
     <script src="script.min.js"></script>
     <script src="script.min.js" defer></script>
+<script>
+    const hamburger = document.querySelector('.hamburger');
+    const nav = document.querySelector('nav');
+
+    hamburger.addEventListener('click', () => {
+        nav.classList.toggle('active');
+    });
+</script>
 
 </body>
 </html>

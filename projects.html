@@ -31,14 +31,6 @@
             <a href="contact.html" >Contact</a>
         </nav>        
     </header>
-<script>
-    const hamburger = document.querySelector('.hamburger');
-    const nav = document.querySelector('nav');
-
-    hamburger.addEventListener('click', () => {
-        nav.classList.toggle('active');
-    });
-</script>
 
 
 
@@ -142,27 +134,6 @@
 </section>
 
 
-<!-- Isotope Library -->
-<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-
-<script>
-  // Initialize Isotope
-    const iso = new Isotope('.portfolio-items', {
-    itemSelector: '.item',
-    layoutMode: 'fitRows'
-    });
-
-  // Filter buttons
-    const buttons = document.querySelectorAll('.filter-btn');
-    buttons.forEach(button => {
-    button.addEventListener('click', () => {
-    buttons.forEach(btn => btn.classList.remove('active'));
-    button.classList.add('active');
-    const filterValue = button.getAttribute('data-filter');
-    iso.arrange({ filter: filterValue });
-    });
-});
-</script>
 
 <!-- Contact Section -->
 <section>
@@ -186,6 +157,27 @@
     <script src="script.min.js"></script>
     <script src="script.min.js" defer></script>
 
+<!-- Isotope Library -->
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+<script>
+  // Initialize Isotope
+    const iso = new Isotope('.portfolio-items', {
+    itemSelector: '.item',
+    layoutMode: 'fitRows'
+    });
+
+  // Filter buttons
+    const buttons = document.querySelectorAll('.filter-btn');
+    buttons.forEach(button => {
+    button.addEventListener('click', () => {
+    buttons.forEach(btn => btn.classList.remove('active'));
+    button.classList.add('active');
+    const filterValue = button.getAttribute('data-filter');
+    iso.arrange({ filter: filterValue });
+    });
+});
+</script>
 
 <!-- Swiper CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
@@ -199,6 +191,14 @@
     AOS.init({
     duration: 800,
     once: true, // Animation only once
+    });
+</script>
+<script>
+    const hamburger = document.querySelector('.hamburger');
+    const nav = document.querySelector('nav');
+
+    hamburger.addEventListener('click', () => {
+        nav.classList.toggle('active');
     });
 </script>
 

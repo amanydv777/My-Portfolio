@@ -31,14 +31,6 @@
             <a href="contact.html" >Contact</a>
         </nav>        
     </header>
-<script>
-    const hamburger = document.querySelector('.hamburger');
-    const nav = document.querySelector('nav');
-
-    hamburger.addEventListener('click', () => {
-        nav.classList.toggle('active');
-    });
-</script>
 
 <section id="about" class="about-section">
   <p data-aos="zoom-out">
@@ -143,36 +135,6 @@ I enjoy crafting interactive and responsive designs that blend technology with u
     </div>
   </div>
 </section>
-<script>
-  const toolsSwiper = new Swiper('.tools-swiper', {
-    loop: true,
-    slidesPerView: 3,
-    spaceBetween: 30,
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    breakpoints: {
-      768: {
-        slidesPerView: 3
-      },
-      480: {
-        slidesPerView: 2
-      },
-      0: {
-        slidesPerView: 1
-      }
-    }
-  });
-</script>
 
 <!-- Contact Section -->
 <section>
@@ -211,6 +173,45 @@ I enjoy crafting interactive and responsive designs that blend technology with u
 
 <!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script>
+    const hamburger = document.querySelector('.hamburger');
+    const nav = document.querySelector('nav');
+
+    hamburger.addEventListener('click', () => {
+        nav.classList.toggle('active');
+    });
+</script>
+
+<script>
+  const toolsSwiper = new Swiper('.tools-swiper', {
+    loop: true,
+    slidesPerView: 3,
+    spaceBetween: 30,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 3
+      },
+      480: {
+        slidesPerView: 2
+      },
+      0: {
+        slidesPerView: 1
+      }
+    }
+  });
+</script>
 
 
 </body>
